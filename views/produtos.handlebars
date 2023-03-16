@@ -1,0 +1,44 @@
+<h1 style="text-align: center; margin-top:40px;">Cadastrar produtos</h1>
+
+<div class="containerCadastrarProdutos">
+    <form action="/cadastrarP" method="post">
+        <div>
+            <label>Nome:</label>
+            <input type="text" name="nome">
+            <label>Descrição:</label>
+            <input type="text" name="descricao">
+            <label>Tipo:</label>
+            <input type="text" name="tipo">
+            <label>Valor:</label>
+            <input type="number" name="valor">
+            <button type="submit">Cadastrar</button>
+        </div>
+    </form>
+</div>
+<h1 style="text-align: center;">Meu carrinho</h1>
+
+<div class="containerCarrinho">
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Descrição</th>
+                <th>Tipo</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each produto}}
+                <tr>
+                    <td>{{this.nome}}</td>
+                    <td>{{this.descricao}}</td>
+                    <td>{{this.tipo}}</td>
+                    <td>{{this.valor}}</td>
+
+                    <td><a href="/editar/{{this.id}}"><button>Editar</button></a></td>
+                    <td><a href="/deletar/{{this.id}}"><button>Deletar</button></a></td>
+                </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>

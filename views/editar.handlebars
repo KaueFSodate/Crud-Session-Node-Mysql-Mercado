@@ -1,0 +1,20 @@
+<h1 style="text-align: center; margin-top:40px;">Cadastrar produtos</h1>
+
+
+<div class="containerCadastrarProdutos">
+    <form action="/editar" method="post">
+
+        <div>
+            <input type="hidden" name="id" value="{{produto.id}}">
+            <label>Nome:</label>
+            <input type="text" name="nome" value="{{produto.nome}}">
+            <label>Descrição:</label>
+            <input type="text" name="descricao" value="{{produto.descricao}}">
+            <label>Tipo:</label>
+            <input type="text" name="tipo" value="{{produto.tipo}}">
+            <label>Valor:</label>
+            <input type="number" name="valor" value="{{produto.valor}}">
+            <button type="submit">Editar</button>
+        </div>
+    </form>
+</div>

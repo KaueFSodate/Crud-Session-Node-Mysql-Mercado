@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #F6F7EB;
+}
+
+nav{
+    background-color: #393E41;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 10vh;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+}
+
+nav ul li{
+    margin: 15px;
+    background-color: azure;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+nav ul li:hover{
+    margin: 15px;
+    background-color: azure;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 150px;
+    border-radius: 0px;
+}
+
+nav ul a{
+    text-decoration: none;
+}
+
+
+.containerTotal{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+.formLogin{
+    background-color: #393E41;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 65vh;
+    width: 20vw;
+}
+
+.formLogin h2{
+    margin: 10px;
+    color: azure;
+}
+
+.formLogin label{
+    margin: 10px;
+    color: azure;
+}
+
+.formLogin input{
+    margin: 10px;
+}
+
+.formLogin button{
+    margin: 10px;
+    height: 30px;
+    width: 80px;
+    border-radius: 10px;
+}
+
+.formLogin button:hover{
+    margin: 10px;
+    height: 40px;
+    width: 90px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.formLogin a{
+    text-decoration: none;
+    color: azure;
+}
+
+.containerCadastrarProdutos{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    width: 100vw;
+}
+
+
+.containerCarrinho{
+    background-color: #153243;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 3 auto;
+    padding: 15px;
+}
+
+.containerCarrinho th{
+    color: azure;
+    padding: 15px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+.containerCarrinho td{
+    color: azure;
+    padding: 15px;
+}
+
+.containerCarrinho button{
+    height: 35px;
+    width: 80px;
+    border-radius: 10px;
+}
+
+.containerCarrinho button:hover{
+    height: 35px;
+    width: 80px;
+    border-radius: 0px;
+    transition: 0.3s;
+}
+
